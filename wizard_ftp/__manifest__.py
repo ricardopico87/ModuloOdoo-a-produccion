@@ -20,7 +20,7 @@
 ##############################################################################
 
 {
-    'name': 'Wizard Mofificar Producto MFH',
+    'name': 'FTP Wizard RPO',
     'version': '1.1',
     'author': 'Ricardo Pico Ochandategui',
     'maintainer': 'Ricardo Pico Ochandategui',
@@ -28,10 +28,11 @@
     'license': 'AGPL-3',
     'category': 'Extra Tools',
     'summary': 'Modificando Producto con un Wizard',
-    'depends': ['base', 'product', 'account'],
+    'depends': ['base', 'account', 'stock'],
     'data': [
         'security/ir.model.access.csv',
-        'wizard/modify_product_wzd.xml',
+        'data/parameter.xml',
+        'wizard/ftp_upload_wzd.xml',
     ],
     'images': ['static/description/banner.png'],
 }

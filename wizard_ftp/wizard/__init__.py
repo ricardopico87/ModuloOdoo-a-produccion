@@ -1,1 +1,1 @@
-from . import modify_product
+from . import ftp_upload

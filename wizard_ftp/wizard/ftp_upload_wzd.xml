@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data>
-        <record id="form_wizard_modify_product" model="ir.ui.view">
-            <field name="name">form.wizard.modify.product</field>
-            <field name="model">modify.product.wzd</field>
+    <odoo>
+        <data>
+            <record id="form_wizard_ftp_upload" model="ir.ui.view">
+            <field name="name">form.wizard.ftp.upload</field>
+            <field name="model">ftp.upload</field>
             <field name="arch" type="xml">
                 <form>
                     <group name="main">
                         <group name="left">
-                            <field name="sale_tax_id" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="file" filename="file_name"/>
+                            <field name="file_name" invisible="1"/>
                         </group>
-                        <group name="right">
-                            <field name="purchase_tax_id" options="{'no_open': True, 'no_create': True}"/>
-                            <field name="company_id" force_save="1"/>
                         </group>
-                    </group>
                     <footer>
-                        <button string="Modify Product" name="action_modify_products" type="object"
-                                class="btn-primary"/>
+                        <button string="Upload" name="action_upload_ftp" type="object" class="btn-primary"/>
                         <button string="Cancel" class="oe_link" special="cancel"/>
                     </footer>
                 </form>
             </field>
         </record>
 
-
-        <record id="action_modify_product" model="ir.actions.act_window">
-            <field name="name">Modify product</field>
-            <field name="res_model">modify.product.wzd</field>
-            <field name="binding_model_id" ref="product.model_product_template"/>
-            <field name="binding_view_types">list,form</field>
+        <record id="action_upload_ftp" model="ir.actions.act_window">
+            <field name="name">Ftp Upload</field>
+            <field name="res_model">ftp.upload</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
         </record>
-    </data>
-</odoo>
+
+
+        <menuitem id="submenu_ftp_upload"
+                  name="Ftp Upload"
+                  action="action_upload_ftp"
+                  parent="stock.menu_stock_inventory_control"
+                  sequence="2"/>
+
+        </data>
+    </odoo>
+

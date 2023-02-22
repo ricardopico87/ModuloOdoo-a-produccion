@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_modify_product_wzd,modify.product.wzd,model_modify_product_wzd,,1,1,1,1
+access_ftp_upload,ftp.upload,model_ftp_upload,,1,1,1,1

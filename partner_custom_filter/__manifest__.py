@@ -20,17 +20,17 @@
 ##############################################################################
 
 {
-    'name': 'Father MFH',
+    'name': 'Custom Filter RPO',
     'version': '16.0.1.0.0',
-    'author': 'Marlon Falcon Hernandez',
-    'maintainer': 'Marlon Falcon Hernandez',
+    'author': 'Richard',
+    'maintainer': 'Richard',
     'website': 'http://www.marlonfalcon.com',
     'license': 'AGPL-3',
     'category': 'Extra Tools',
     'summary': 'Short summary.',
     'depends': ['base'],
     'data': [
-        'views/view.xml',
+        'views/rest_partner_views.xml',
     ],
     'images': ['static/description/banner.png'],
 }

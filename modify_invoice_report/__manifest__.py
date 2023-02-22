@@ -20,17 +20,18 @@
 ##############################################################################
 
 {
-    'name': 'Father MFH',
-    'version': '16.0.1.0.0',
+    'name': 'Invoice Report RPO',
+    'version': '1.1',
     'author': 'Marlon Falcon Hernandez',
     'maintainer': 'Marlon Falcon Hernandez',
     'website': 'http://www.marlonfalcon.com',
     'license': 'AGPL-3',
     'category': 'Extra Tools',
     'summary': 'Short summary.',
-    'depends': ['base'],
+    'depends': ['base','account'],
     'data': [
-        'views/view.xml',
-    ],
+         'reports/invoice_report.xml',
+         'reports/reports.xml',
+            ],
     'images': ['static/description/banner.png'],
 }

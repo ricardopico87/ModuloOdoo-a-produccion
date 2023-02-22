@@ -20,17 +20,18 @@
 ##############################################################################
 
 {
-    'name': 'Father MFH',
-    'version': '16.0.1.0.0',
-    'author': 'Marlon Falcon Hernandez',
-    'maintainer': 'Marlon Falcon Hernandez',
+    'name': 'Wizard Mofificar Producto MFH',
+    'version': '1.1',
+    'author': 'Ricardo Pico Ochandategui',
+    'maintainer': 'Ricardo Pico Ochandategui',
     'website': 'http://www.marlonfalcon.com',
     'license': 'AGPL-3',
     'category': 'Extra Tools',
-    'summary': 'Short summary.',
-    'depends': ['base'],
+    'summary': 'Modificando Producto con un Wizard',
+    'depends': ['base', 'product', 'account'],
     'data': [
-        'views/view.xml',
+        'security/ir.model.access.csv',
+        'wizard/modify_product_wzd.xml',
     ],
     'images': ['static/description/banner.png'],
 }

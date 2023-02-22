@@ -20,7 +20,7 @@
 ##############################################################################
 
 {
-    'name': 'Invoice Report RPO',
+    'name': 'Update Sales Report RPO',
     'version': '1.1',
     'author': 'Marlon Falcon Hernandez',
     'maintainer': 'Marlon Falcon Hernandez',
@@ -28,10 +28,9 @@
     'license': 'AGPL-3',
     'category': 'Extra Tools',
     'summary': 'Short summary.',
-    'depends': ['base','account'],
+    'depends': ['base','sale_management'],
     'data': [
-         'reports/invoice_report.xml',
-         'reports/reports.xml',
+           'report/upd_sale_report.xml',
             ],
     'images': ['static/description/banner.png'],
 }

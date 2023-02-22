@@ -20,17 +20,19 @@
 ##############################################################################
 
 {
-    'name': 'Father MFH',
+    'name': 'Sale Advance Permission RPO',
     'version': '16.0.1.0.0',
-    'author': 'Marlon Falcon Hernandez',
-    'maintainer': 'Marlon Falcon Hernandez',
+    'author': 'Ricardo Pico',
+    'maintainer': 'Ricardo Pico',
     'website': 'http://www.marlonfalcon.com',
     'license': 'AGPL-3',
-    'category': 'Extra Tools',
+    'category': 'Sales',
     'summary': 'Short summary.',
-    'depends': ['base'],
+    'depends': ['sale_management'],
     'data': [
-        'views/view.xml',
+         'security/security.xml',
+         'views/sale_order_view.xml',
+         'views/product_view.xml',
     ],
     'images': ['static/description/banner.png'],
 }
